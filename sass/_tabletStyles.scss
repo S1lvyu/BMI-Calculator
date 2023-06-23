@@ -1,0 +1,129 @@
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .first-container {
+    height: 1000px;
+  }
+  .title-container {
+    &__icon {
+      padding-left: 362px;
+    }
+    &__text {
+      width: 686px;
+    }
+  }
+
+  .calculator {
+    width: 686px;
+    height: 620px;
+    top: 333px;
+    left: 40px;
+
+    &__title {
+      text-align: left;
+      padding-top: 32px;
+      padding-left: 32px;
+    }
+    &__result-container {
+      width: 560px;
+      height: 149px;
+      border-radius: 16px 999px 999px 16px;
+      margin-left: 45px;
+    }
+    &__second-result {
+      position: absolute;
+      left: 300px;
+      width: 280px;
+    }
+    &__second-span {
+      width: 215px;
+      padding-left: 270px;
+    }
+  }
+  .calculator-imperial {
+    position: absolute;
+    top: 465px;
+    left: 25px;
+    width: 670px;
+  }
+  .calculator-metric {
+    padding-top: 50px;
+  }
+  .calculator-form {
+    &__container {
+      display: flex;
+      padding-left: 20px;
+      position: relative;
+    }
+    &__container-imperial {
+      flex-direction: column;
+    }
+    &__label-imperial {
+      width: 265px;
+      padding: 0 0 16px 24px;
+    }
+    &__inputs-container {
+      gap: 15px;
+      width: 633px;
+    }
+    &__input-imperial {
+      width: 238px;
+    }
+    &__unit-container {
+      flex-direction: row;
+    }
+    &__cm {
+      top: 50px;
+      left: 275px;
+    }
+    &__kg {
+      top: 50px;
+      right: 50px;
+    }
+    &__ft {
+      top: 40px;
+      left: 270px;
+    }
+    &__in {
+      top: 40px;
+      right: 60px;
+    }
+    &__st {
+      top: 155px;
+      left: 270px;
+    }
+    &__lbs {
+      top: 155px;
+      right: 60px;
+    }
+  }
+  .second-container {
+    display: flex;
+    gap: 30px;
+  }
+  .recommendation {
+    width: 768px;
+    &__text {
+      width: 687px;
+    }
+  }
+  .last-container {
+    height: 1100px;
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 740px;
+  }
+  .card:nth-last-child(1) {
+    margin-left: 200px;
+  }
+}

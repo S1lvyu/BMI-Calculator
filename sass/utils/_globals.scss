@@ -1,0 +1,17 @@
+body {
+  font-family: $main-font-family;
+  font-weight: $font-weight-400;
+  color: $text-color;
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.hidden {
+  display: none;
+}

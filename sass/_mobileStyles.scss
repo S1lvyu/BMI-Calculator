@@ -1,0 +1,327 @@
+.container {
+  width: 375px;
+  margin: 0 auto;
+}
+.first-container {
+  height: 1230px;
+  position: relative;
+}
+.title-container {
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+  border-radius: 0px 0px 35px 35px;
+  height: 640px;
+  &__icon {
+    padding-top: 32px;
+    padding-left: 168px;
+    width: 40px;
+    height: 40px;
+  }
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: $font-size-48;
+    line-height: 110%;
+    text-align: center;
+    padding-top: 24px;
+    margin: 0;
+  }
+  &__text {
+    font-size: $font-size-16;
+    line-height: 150%;
+    text-align: center;
+
+    width: 327px;
+    margin: 0 auto;
+    padding-top: 24px;
+  }
+}
+.calculator {
+  width: 328px;
+  height: 649px;
+  margin: 0 auto;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  border-radius: 16px;
+  position: absolute;
+  top: 480px;
+  background: $white-color;
+  left: 25px;
+
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+
+    text-align: center;
+    margin: 0;
+    padding-top: 24px;
+  }
+  &__result-container {
+    top: 375px;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 215px;
+    height: 188px;
+    background: linear-gradient(90deg, #345ff7 0%, #587dff 100%);
+    border-radius: 16px;
+    padding: 32px;
+    margin-left: 24px;
+  }
+  &__result {
+    font-weight: $font-weight-600;
+    font-size: $font-size-16;
+    line-height: 150%;
+    color: $white-color;
+  }
+  &__result-span {
+    font-weight: $font-weight-600;
+    font-size: $font-size-48;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    color: $white-color;
+  }
+  &__second-result {
+    font-size: $font-size-16;
+    line-height: 150%;
+    color: $white-color;
+  }
+  &__second-span {
+    font-weight: $font-weight-600;
+    color: $white-color;
+  }
+}
+.calculator-imperial {
+  z-index: 5;
+  position: relative;
+  margin-left: 29px;
+}
+.calculator-form {
+  &__unit-container {
+    padding-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-evenly;
+    padding-bottom: 24px;
+  }
+  &__unit {
+    font-weight: $font-weight-600;
+    font-size: $font-size-16;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__unit-select {
+    width: 31px;
+    height: 31px;
+    border: 1px solid #d8e2e7;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    font-size: $font-size-14;
+    line-height: 150%;
+    color: $secondary-text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 24px 16px 24px;
+    width: 280px;
+    height: 100px;
+  }
+  &__label-imperial {
+    width: 110px;
+    padding: 0 0 16px 24px;
+  }
+  &__input {
+    padding: 20px 24px;
+    border: 1px solid #d8e2e7;
+    border-radius: 12px;
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $main-color;
+    }
+  }
+  &__input-imperial {
+    height: 30px;
+    width: 100px;
+    padding: 10px 12px;
+  }
+  &__inputs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__tag {
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+    color: $main-color;
+    position: absolute;
+    width: 40px;
+  }
+  &__cm {
+    right: 40px;
+    top: 182px;
+  }
+  &__kg {
+    right: 40px;
+    top: 300px;
+  }
+  &__ft {
+    top: 40px;
+    left: 115px;
+  }
+  &__in {
+    top: 40px;
+    right: 50px;
+  }
+  &__st {
+    top: 155px;
+    left: 115px;
+  }
+  &__lbs {
+    right: 50px;
+    top: 155px;
+  }
+}
+
+.page-image {
+  width: 375px;
+  height: 354px;
+}
+.about-BMI {
+  padding: 48px 24px 72px;
+  &__icon {
+    display: none;
+  }
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: 32px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+
+    margin: 0;
+  }
+  &__text {
+    padding-top: 32px;
+
+    font-size: $font-size-16;
+    line-height: 150%;
+    color: $secondary-text-color;
+  }
+}
+.recommendation-container {
+  background: linear-gradient(
+    290.1deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+}
+.recommendation {
+  width: 350px;
+  margin: 0 auto;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 24px;
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: $font-size-24;
+    line-height: 29px;
+    letter-spacing: -0.05em;
+
+    padding-top: 32px;
+    padding-bottom: 24px;
+    margin: 0;
+  }
+  &__text {
+    font-size: $font-size-16;
+    line-height: 150%;
+    color: $secondary-text-color;
+    width: 350px;
+  }
+}
+.last-container {
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: 32px;
+    line-height: 110%;
+    text-align: left;
+    letter-spacing: -0.05em;
+    padding-top: 72px;
+    margin: 0;
+  }
+  &__text {
+    font-size: $font-size-16;
+    line-height: 150%;
+
+    color: $secondary-text-color;
+    padding-top: 32px;
+  }
+  &__line-icon {
+    display: none;
+  }
+  &__description {
+    padding-left: 24px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9px;
+  gap: 32px;
+  width: 327px;
+  height: 216px;
+  background: $white-color;
+  box-shadow: 16px 32px 56px rgba(143, 174, 207, 0.25);
+  border-radius: 16px;
+  margin: 0 auto;
+  &__title-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-weight: $font-weight-600;
+    font-size: $font-size-20;
+    line-height: 24px;
+    letter-spacing: -0.05em;
+    margin: 0;
+  }
+  &__text {
+    font-size: $font-size-16;
+    line-height: 150%;
+    color: $secondary-text-color;
+  }
+}
+.cards-container {
+  padding-top: 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 96px;
+}
